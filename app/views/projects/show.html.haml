@@ -1,0 +1,20 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @project.title
+%p
+  %b Description:
+  = @project.description
+%p
+  %b Body:
+  = @project.body
+- if @project.assets.exists?
+  %h3 Attached Files
+  .assets
+  - @project.assets.each do |asset|
+    = link_to image_tag(asset.asset.url(:thumb)), asset.asset.url(:large)
+   
+= link_to 'Edit', edit_project_path(@project)
+\|
+= link_to 'Back', projects_path

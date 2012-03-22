@@ -1,0 +1,38 @@
+= form_for @project, :html => { :multipart => true} do |f|
+  -if @project.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@project.errors.count, "error")} prohibited this project from being saved:"
+      %ul
+        - @project.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :description
+    = f.text_field :description
+  .field
+    = f.label :body
+    = f.text_area :body
+  .field
+    = f.label :photo
+    = f.file_field :photo
+  - number = 0
+  #files
+    %span.file.f0
+      %span.button UPLOAD PHOTO
+      %input{:type => 'file', :name => 'project[assets_attributes][0][asset]', :id=> 'project_assets_attributes_0_asset'}      
+    #files_to_upload
+      %h3 Files to Upload
+    - unless @project.assets.count.eql?(0)
+      #files_uploaded
+        %h3 Current Images
+        - @project.assets.each do |asset|
+          .image_preview
+            = link_to image_tag(asset.asset.url(:thumb)), asset.asset.url(:large)
+            %span.delete_img{:title=>"Delete image", 'data-id'=> asset.id} X
+  
+  
+  .actions
+    = f.submit 'Save'

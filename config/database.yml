@@ -1,0 +1,21 @@
+pg_defaults: &pg_defaults
+  adapter: postgresql
+  username: postgres
+  password: '0303456'
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *pg_defaults
+  database: polita_development
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *pg_defaults
+  database: polita_test
+  
+production:
+  <<: *pg_defaults
+  database: polita_production

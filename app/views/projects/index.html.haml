@@ -1,0 +1,29 @@
+%h1 Projects... 
+- if admin_signed_in?
+  = link_to 'New Project', new_project_path, :class => "new_project_btn btn"
+#work{:style => "display:none"}
+.projects_cont
+  %ul#imglist1.imglist.group
+    - @projects.each do |project|
+      %li
+        %a{:href=>"javascript:", :id=>"open_project", :class => project.id}
+          .bg
+          = image_tag(project.photo.url(:small))
+          .desc
+            %span.title
+              = project.title
+            %span.description
+              = project.description
+            
+            .moreplus
+              %span.plus +
+              %span.more ver más
+        
+       
+        - if admin_signed_in?
+          .actions
+            = link_to image_tag(asset_path 'show.png'), project
+            = link_to image_tag(asset_path 'edit.png'), edit_project_path(project)
+            = link_to image_tag(asset_path 'delete.png'), project, :confirm => 'Are you sure?', :method => :delete
+        
+  .spacer

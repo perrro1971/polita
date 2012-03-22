@@ -1,0 +1,10 @@
+%head
+  %title= "Polita's Portfolio"  
+  %link{:rel => 'shortcut icon', :href => '/favicon.ico'}
+  = stylesheet_link_tag    'application'
+  = javascript_include_tag 'application'
+  /[if IE]
+    :javascript 
+      = javascript_include_tag 'http://html5shiv.googlecode.com/svn/trunk/html5.js'
+  = csrf_meta_tags
+  = content_for :head

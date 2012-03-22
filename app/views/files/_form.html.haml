@@ -1,0 +1,5 @@
+= fields_for @project do |f|
+  %p
+    = f.fields_for :assets, :child_index => number do |asset|
+      = asset.label :asset, "File ##{number += 1}"
+      = asset.file_field :asset

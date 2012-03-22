@@ -1,0 +1,13 @@
+!!! 5
+%html
+  = render "shared/head_content"
+  %body{ :id => "#{@body_id}" }
+    .wrapper
+      = render 'shared/header'
+      - if notice
+        .notice=notice
+      - if alert
+        .alert=alert
+      .main_content
+        = yield
+      = render 'shared/footer'

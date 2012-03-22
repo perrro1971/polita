@@ -1,0 +1,24 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1332358781.202325:@value{	I"length:EFiI"digest;
+F"%8afc4247dcf26b3059653223f7f7bb80I"source;
+FI"/* line 1, ../../app/assets/stylesheets/main.css.scss.erb */
+body {
+  background: #f0f0f0 url(/assets/bg.png) repeat-x 0 0;
+}
+
+/* line 5, ../../app/assets/stylesheets/main.css.scss.erb */
+.prev {
+  background: url(/assets/circles.png) left top no-repeat;
+}
+
+/* line 9, ../../app/assets/stylesheets/main.css.scss.erb */
+.next {
+  background: url(/assets/circles.png) center top no-repeat;
+}
+
+/* line 13, ../../app/assets/stylesheets/main.css.scss.erb */
+#close {
+  background: url(/assets/circles.png) right top no-repeat;
+}
+;
+FI"_version;
+F"%3846ae8a26c499cf26244d0ac3f2a0bd

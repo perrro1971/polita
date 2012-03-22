@@ -1,0 +1,17 @@
+.header
+  .logo
+    = link_to image_tag(asset_path 'logo.png'), root_path
+  .main_menu
+    %ul
+      %li
+        = link_to "Proyectos", root_path, :class => "projects"
+      %li
+        = link_to "Sobre Mi", about_path, :class => "about_me"
+  
+  - if admin_signed_in?
+    .user_nav
+      %ul
+        %li
+          = link_to 'Sign out', destroy_admin_session_path, :method => :delete, :class => "sign_out_btn btn"
+          %span{:style => "display:block;width:100%;"}
+            = mail_to current_admin.email

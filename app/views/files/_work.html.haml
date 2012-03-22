@@ -1,0 +1,26 @@
+.caroufredsel_content
+  .nav_work
+    %a#prev1.prev
+      %span <
+    %a#next1.next
+      %span >
+  #w_cont.work_cont
+    - @project.assets.each do |asset|
+      = image_tag(asset.asset.url(:large))
+  .info
+    .col1
+      .category
+        %span Categoria
+        %span.tclient 
+          = @project.title
+      .client
+        %span Cliente
+        = @project.description
+    .col2
+      %span Informacion
+      = @project.body
+    .spacer
+  .spacer
+  %a#close
+    %span x
+  
