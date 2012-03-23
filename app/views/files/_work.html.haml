@@ -1,3 +1,10 @@
+-# content_for :head do
+  :javascript
+    $(’body’).load(function(){
+      $.preloadCssImages();
+    }); 
+
+
 .caroufredsel_content
   .nav_work
     %a#prev1.prev
