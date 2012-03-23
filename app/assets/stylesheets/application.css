@@ -474,3 +474,8 @@ div.actions a{
 #files_to_upload .file{
 	display: list-item;
 }
+
+img.gotcolors{
+	width: 220px;
+	height: 175px;
+}

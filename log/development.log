@@ -2395,3 +2395,497 @@ Served asset /jquery.js - 304 Not Modified (0ms)
 
 Started GET "/assets/main.css?body=1" for 127.0.0.1 at Fri Mar 23 11:54:24 -0300 2012
 Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 23 12:05:00 -0300 2012
+  [1m[36m (0.3ms)[0m  [1mSHOW search_path[0m
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.9ms)[0m  SELECT "projects".* FROM "projects" 
+  [1m[36mAdmin Load (1.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."id" = 1 LIMIT 1[0m
+Rendered projects/index.html.haml within layouts/application (54.1ms)
+Rendered shared/_head_content.haml (109.3ms)
+Rendered shared/_header.haml (8.1ms)
+Rendered shared/_footer.haml (6.4ms)
+Completed 200 OK in 228ms (Views: 212.8ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Fri Mar 23 12:05:00 -0300 2012
+Served asset /main.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 23 12:05:00 -0300 2012
+Served asset /jquery.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 23 12:05:00 -0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.carouFredSel-5.5.0.js?body=1" for 127.0.0.1 at Fri Mar 23 12:05:01 -0300 2012
+Served asset /jquery.carouFredSel-5.5.0.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/preloadCssImages.jQuery_v5.js?body=1" for 127.0.0.1 at Fri Mar 23 12:05:01 -0300 2012
+Served asset /preloadCssImages.jQuery_v5.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Fri Mar 23 12:05:01 -0300 2012
+Served asset /projects.js - 304 Not Modified (5ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 23 12:07:33 -0300 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" 
+  [1m[36mAdmin Load (0.5ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."id" = 1 LIMIT 1[0m
+Rendered projects/index.html.haml within layouts/application (41.0ms)
+Rendered shared/_head_content.haml (8.2ms)
+Rendered shared/_header.haml (1.3ms)
+Rendered shared/_footer.haml (0.4ms)
+Completed 200 OK in 71ms (Views: 59.4ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Fri Mar 23 12:07:33 -0300 2012
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 23 12:07:33 -0300 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 23 12:07:33 -0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.carouFredSel-5.5.0.js?body=1" for 127.0.0.1 at Fri Mar 23 12:07:33 -0300 2012
+Served asset /jquery.carouFredSel-5.5.0.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preloadCssImages.jQuery_v5.js?body=1" for 127.0.0.1 at Fri Mar 23 12:07:33 -0300 2012
+Served asset /preloadCssImages.jQuery_v5.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Fri Mar 23 12:07:33 -0300 2012
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 23 12:07:45 -0300 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" 
+  [1m[36mAdmin Load (0.4ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."id" = 1 LIMIT 1[0m
+Rendered projects/index.html.haml within layouts/application (99.0ms)
+Rendered shared/_head_content.haml (8.4ms)
+Rendered shared/_header.haml (1.5ms)
+Rendered shared/_footer.haml (0.4ms)
+Completed 200 OK in 130ms (Views: 119.6ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Fri Mar 23 12:07:46 -0300 2012
+Served asset /main.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 23 12:07:46 -0300 2012
+Served asset /jquery.js - 200 OK (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 23 12:07:46 -0300 2012
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.carouFredSel-5.5.0.js?body=1" for 127.0.0.1 at Fri Mar 23 12:07:46 -0300 2012
+Served asset /jquery.carouFredSel-5.5.0.js - 200 OK (4ms)
+
+
+Started GET "/assets/preloadCssImages.jQuery_v5.js?body=1" for 127.0.0.1 at Fri Mar 23 12:07:46 -0300 2012
+Served asset /preloadCssImages.jQuery_v5.js - 200 OK (2ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Fri Mar 23 12:07:46 -0300 2012
+Served asset /projects.js - 200 OK (0ms)
+
+
+Started GET "/files?id=1%20image_tn" for 127.0.0.1 at Fri Mar 23 12:08:21 -0300 2012
+  Processing by FilesController#index as */*
+  Parameters: {"id"=>"1 image_tn"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1  [["id", "1 image_tn"]]
+  [1m[36mAsset Load (0.9ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."project_id" = 1[0m
+Rendered files/_work.html.haml (137.0ms)
+Completed 200 OK in 230ms (Views: 206.0ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/files?id=1%20image_tn" for 127.0.0.1 at Fri Mar 23 12:08:22 -0300 2012
+  Processing by FilesController#index as */*
+  Parameters: {"id"=>"1 image_tn"}
+  [1m[35mProject Load (0.8ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1  [["id", "1 image_tn"]]
+  [1m[36mAsset Load (1.0ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."project_id" = 1[0m
+Rendered files/_work.html.haml (55.1ms)
+Completed 200 OK in 94ms (Views: 55.2ms | ActiveRecord: 21.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 23 12:08:23 -0300 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" 
+  [1m[36mAdmin Load (0.5ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."id" = 1 LIMIT 1[0m
+Rendered projects/index.html.haml within layouts/application (33.9ms)
+Rendered shared/_head_content.haml (9.7ms)
+Rendered shared/_header.haml (1.3ms)
+Rendered shared/_footer.haml (0.4ms)
+Completed 200 OK in 67ms (Views: 56.5ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 23 12:08:24 -0300 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preloadCssImages.jQuery_v5.js?body=1" for 127.0.0.1 at Fri Mar 23 12:08:24 -0300 2012
+Served asset /preloadCssImages.jQuery_v5.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 23 12:08:24 -0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Fri Mar 23 12:08:24 -0300 2012
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.carouFredSel-5.5.0.js?body=1" for 127.0.0.1 at Fri Mar 23 12:08:24 -0300 2012
+Served asset /jquery.carouFredSel-5.5.0.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Fri Mar 23 12:08:24 -0300 2012
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 23 12:08:28 -0300 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" 
+  [1m[36mAdmin Load (1.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."id" = 1 LIMIT 1[0m
+Rendered projects/index.html.haml within layouts/application (38.2ms)
+Rendered shared/_head_content.haml (9.0ms)
+Rendered shared/_header.haml (1.3ms)
+Rendered shared/_footer.haml (0.4ms)
+Completed 200 OK in 69ms (Views: 57.2ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Fri Mar 23 12:08:28 -0300 2012
+Served asset /main.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 23 12:08:28 -0300 2012
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 23 12:08:28 -0300 2012
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.carouFredSel-5.5.0.js?body=1" for 127.0.0.1 at Fri Mar 23 12:08:28 -0300 2012
+Served asset /jquery.carouFredSel-5.5.0.js - 200 OK (0ms)
+
+
+Started GET "/assets/preloadCssImages.jQuery_v5.js?body=1" for 127.0.0.1 at Fri Mar 23 12:08:28 -0300 2012
+Served asset /preloadCssImages.jQuery_v5.js - 200 OK (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Fri Mar 23 12:08:28 -0300 2012
+Served asset /projects.js - 200 OK (0ms)
+
+
+Started GET "/files?id=1%20image_tn" for 127.0.0.1 at Fri Mar 23 12:08:30 -0300 2012
+  Processing by FilesController#index as */*
+  Parameters: {"id"=>"1 image_tn"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1  [["id", "1 image_tn"]]
+  [1m[36mAsset Load (0.4ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."project_id" = 1[0m
+Rendered files/_work.html.haml (35.0ms)
+Completed 200 OK in 59ms (Views: 37.9ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 23 12:08:33 -0300 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT "projects".* FROM "projects" 
+  [1m[36mAdmin Load (1.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."id" = 1 LIMIT 1[0m
+Rendered projects/index.html.haml within layouts/application (48.2ms)
+Rendered shared/_head_content.haml (10.6ms)
+Rendered shared/_header.haml (1.8ms)
+Rendered shared/_footer.haml (0.6ms)
+Completed 200 OK in 90ms (Views: 76.9ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Fri Mar 23 12:08:34 -0300 2012
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preloadCssImages.jQuery_v5.js?body=1" for 127.0.0.1 at Fri Mar 23 12:08:34 -0300 2012
+Served asset /preloadCssImages.jQuery_v5.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Fri Mar 23 12:08:34 -0300 2012
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 23 12:08:34 -0300 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.carouFredSel-5.5.0.js?body=1" for 127.0.0.1 at Fri Mar 23 12:08:34 -0300 2012
+Served asset /jquery.carouFredSel-5.5.0.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 23 12:08:34 -0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 23 12:08:53 -0300 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" 
+  [1m[36mAdmin Load (0.5ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."id" = 1 LIMIT 1[0m
+Rendered projects/index.html.haml within layouts/application (115.7ms)
+Rendered shared/_head_content.haml (8.2ms)
+Rendered shared/_header.haml (1.7ms)
+Rendered shared/_footer.haml (0.4ms)
+Completed 200 OK in 145ms (Views: 134.9ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Fri Mar 23 12:08:53 -0300 2012
+Served asset /main.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 23 12:08:53 -0300 2012
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 23 12:08:53 -0300 2012
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.carouFredSel-5.5.0.js?body=1" for 127.0.0.1 at Fri Mar 23 12:08:53 -0300 2012
+Served asset /jquery.carouFredSel-5.5.0.js - 200 OK (0ms)
+
+
+Started GET "/assets/preloadCssImages.jQuery_v5.js?body=1" for 127.0.0.1 at Fri Mar 23 12:08:53 -0300 2012
+Served asset /preloadCssImages.jQuery_v5.js - 200 OK (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Fri Mar 23 12:08:53 -0300 2012
+Served asset /projects.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 23 12:09:04 -0300 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" 
+  [1m[36mAdmin Load (0.5ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."id" = 1 LIMIT 1[0m
+Rendered projects/index.html.haml within layouts/application (30.9ms)
+Rendered shared/_head_content.haml (8.4ms)
+Rendered shared/_header.haml (1.4ms)
+Rendered shared/_footer.haml (0.3ms)
+Completed 200 OK in 65ms (Views: 54.0ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Fri Mar 23 12:09:04 -0300 2012
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 23 12:09:04 -0300 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 23 12:09:04 -0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.carouFredSel-5.5.0.js?body=1" for 127.0.0.1 at Fri Mar 23 12:09:04 -0300 2012
+Served asset /jquery.carouFredSel-5.5.0.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preloadCssImages.jQuery_v5.js?body=1" for 127.0.0.1 at Fri Mar 23 12:09:04 -0300 2012
+Served asset /preloadCssImages.jQuery_v5.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Fri Mar 23 12:09:04 -0300 2012
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 23 12:09:19 -0300 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" 
+  [1m[36mAdmin Load (0.6ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."id" = 1 LIMIT 1[0m
+Rendered projects/index.html.haml within layouts/application (40.8ms)
+Rendered shared/_head_content.haml (9.5ms)
+Rendered shared/_header.haml (2.0ms)
+Rendered shared/_footer.haml (0.4ms)
+Completed 200 OK in 72ms (Views: 60.9ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Fri Mar 23 12:09:19 -0300 2012
+Served asset /main.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 23 12:09:19 -0300 2012
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 23 12:09:19 -0300 2012
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.carouFredSel-5.5.0.js?body=1" for 127.0.0.1 at Fri Mar 23 12:09:19 -0300 2012
+Served asset /jquery.carouFredSel-5.5.0.js - 200 OK (10ms)
+
+
+Started GET "/assets/preloadCssImages.jQuery_v5.js?body=1" for 127.0.0.1 at Fri Mar 23 12:09:19 -0300 2012
+Served asset /preloadCssImages.jQuery_v5.js - 200 OK (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Fri Mar 23 12:09:19 -0300 2012
+Served asset /projects.js - 200 OK (0ms)
+
+
+Started GET "/files?id=1" for 127.0.0.1 at Fri Mar 23 12:09:22 -0300 2012
+  Processing by FilesController#index as */*
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mAsset Load (0.4ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."project_id" = 1[0m
+Rendered files/_work.html.haml (31.0ms)
+Completed 200 OK in 56ms (Views: 34.8ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 23 12:09:25 -0300 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT "projects".* FROM "projects" 
+  [1m[36mAdmin Load (0.5ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."id" = 1 LIMIT 1[0m
+Rendered projects/index.html.haml within layouts/application (39.9ms)
+Rendered shared/_head_content.haml (101.6ms)
+Rendered shared/_header.haml (1.5ms)
+Rendered shared/_footer.haml (1.0ms)
+Completed 200 OK in 177ms (Views: 160.8ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Fri Mar 23 12:09:25 -0300 2012
+Served asset /main.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 23 12:09:25 -0300 2012
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 23 12:09:25 -0300 2012
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.carouFredSel-5.5.0.js?body=1" for 127.0.0.1 at Fri Mar 23 12:09:25 -0300 2012
+Served asset /jquery.carouFredSel-5.5.0.js - 200 OK (0ms)
+
+
+Started GET "/assets/preloadCssImages.jQuery_v5.js?body=1" for 127.0.0.1 at Fri Mar 23 12:09:25 -0300 2012
+Served asset /preloadCssImages.jQuery_v5.js - 200 OK (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Fri Mar 23 12:09:25 -0300 2012
+Served asset /projects.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 23 12:11:58 -0300 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" 
+  [1m[36mAdmin Load (0.5ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."id" = 1 LIMIT 1[0m
+Rendered projects/index.html.haml within layouts/application (102.9ms)
+Compiled application.css  (7ms)  (pid 9034)
+Rendered shared/_head_content.haml (24.7ms)
+Rendered shared/_header.haml (1.6ms)
+Rendered shared/_footer.haml (0.3ms)
+Completed 200 OK in 153ms (Views: 138.4ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Fri Mar 23 12:11:58 -0300 2012
+Served asset /main.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 23 12:11:58 -0300 2012
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 23 12:11:58 -0300 2012
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.carouFredSel-5.5.0.js?body=1" for 127.0.0.1 at Fri Mar 23 12:11:58 -0300 2012
+Served asset /jquery.carouFredSel-5.5.0.js - 200 OK (0ms)
+
+
+Started GET "/assets/preloadCssImages.jQuery_v5.js?body=1" for 127.0.0.1 at Fri Mar 23 12:11:58 -0300 2012
+Served asset /preloadCssImages.jQuery_v5.js - 200 OK (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Fri Mar 23 12:11:58 -0300 2012
+Served asset /projects.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 23 12:12:11 -0300 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" 
+  [1m[36mAdmin Load (0.5ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."id" = 1 LIMIT 1[0m
+Rendered projects/index.html.haml within layouts/application (31.1ms)
+Rendered shared/_head_content.haml (8.5ms)
+Rendered shared/_header.haml (1.4ms)
+Rendered shared/_footer.haml (0.3ms)
+Completed 200 OK in 61ms (Views: 50.9ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Fri Mar 23 12:12:12 -0300 2012
+Served asset /main.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 23 12:12:12 -0300 2012
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 23 12:12:12 -0300 2012
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.carouFredSel-5.5.0.js?body=1" for 127.0.0.1 at Fri Mar 23 12:12:12 -0300 2012
+Served asset /jquery.carouFredSel-5.5.0.js - 200 OK (0ms)
+
+
+Started GET "/assets/preloadCssImages.jQuery_v5.js?body=1" for 127.0.0.1 at Fri Mar 23 12:12:12 -0300 2012
+Served asset /preloadCssImages.jQuery_v5.js - 200 OK (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Fri Mar 23 12:12:12 -0300 2012
+Served asset /projects.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 23 12:13:25 -0300 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" 
+  [1m[36mAdmin Load (0.4ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."id" = 1 LIMIT 1[0m
+Rendered projects/index.html.haml within layouts/application (31.1ms)
+Compiled application.css  (4ms)  (pid 9034)
+Rendered shared/_head_content.haml (19.4ms)
+Rendered shared/_header.haml (3.3ms)
+Rendered shared/_footer.haml (0.5ms)
+Completed 200 OK in 74ms (Views: 63.0ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Fri Mar 23 12:13:25 -0300 2012
+Served asset /main.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 23 12:13:25 -0300 2012
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 23 12:13:25 -0300 2012
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.carouFredSel-5.5.0.js?body=1" for 127.0.0.1 at Fri Mar 23 12:13:25 -0300 2012
+Served asset /jquery.carouFredSel-5.5.0.js - 200 OK (0ms)
+
+
+Started GET "/assets/preloadCssImages.jQuery_v5.js?body=1" for 127.0.0.1 at Fri Mar 23 12:13:25 -0300 2012
+Served asset /preloadCssImages.jQuery_v5.js - 200 OK (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Fri Mar 23 12:13:25 -0300 2012
+Served asset /projects.js - 200 OK (0ms)
