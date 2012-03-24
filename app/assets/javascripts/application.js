@@ -79,17 +79,32 @@ function imageUpload(e){
 }
 
 
-function c_carousel(){
+function preloadImages(){
   $("h1").html($(".tclient").html());
-  
-  $.preloadCssImages();
-  
-  $('#w_cont').carouFredSel({
-    prev: '#prev1',
-    next: '#next1'
+  $('#w_cont').css("opacity", "0");
+  $("#w_cont").queryLoader2({
+  	barColor: "none",
+    backgroundColor: "none",
+    percentage: true,
+    barHeight: 30,
+    onComplete: loadedImagesComplete,
+    completeAnimation: "grow"
   });
   
-  $("a#close").click(
+  
+}
+
+function showCarrousel(){
+	console.log("listo")
+	$('#w_cont').carouFredSel({
+	  prev: '#prev1',
+	  next: '#next1'
+	});
+	$('#w_cont').animate({opacity: '1'},{duration: 300});
+
+	
+
+   $("a#close").click(
   	function(){
   		$('html, body').animate({scrollTop:0}, 'slow');
   		$("#work").slideUp(300, function () {
@@ -98,6 +113,10 @@ function c_carousel(){
     	});
   	}
   );
+}
+
+function loadedImagesComplete(){
+	showCarrousel();
 }
  
 // http://net.tutsplus.com/tutorials/javascript-ajax/how-to-transition-an-image-from-bw-to-color-with-canvas/
