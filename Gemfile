@@ -15,7 +15,6 @@ gem 'haml-rails'
 gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'#, :branch => 'rails_3_1_compatibility'
 gem 'cancan'
 gem 'devise'
-gem 'aws-s3'
 
 # Gems used only for assets and not required
 # in production environments by default.
