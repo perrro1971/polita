@@ -45,7 +45,7 @@ $(document).ready(function() {
    				type: 'DELETE',
    				success: function(){
 				    delete_div.remove();
-				    console.log("success")
+				    
 				}
 			});	
 		}
@@ -57,7 +57,7 @@ function imageUpload(e){
 	var number_fields, file_name;
 	if ($(this)[0].value !== '') {
     	number_fields = $("#files").find(".file").length;
-    	console.log(number_fields)
+    	
     	new_div_field = '<span class="file f' + number_fields + '"><span class="button">UPLOAD PHOTO</span></span>';
     	$("#files").prepend(new_div_field);
     	
@@ -85,7 +85,7 @@ function preloadImages(){
   $("#w_cont").queryLoader2({
   	barColor: "none",
     backgroundColor: "none",
-    percentage: false,
+    percentage: true,
     barHeight: 30,
     onComplete: loadedImagesComplete,
     completeAnimation: "grow"
@@ -95,7 +95,6 @@ function preloadImages(){
 }
 
 function showCarrousel(){
-	console.log("listo")
 	$('#w_cont').carouFredSel({
 	  prev: '#prev1',
 	  next: '#next1'
