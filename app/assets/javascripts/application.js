@@ -85,7 +85,7 @@ function preloadImages(){
   $("#w_cont").queryLoader2({
   	barColor: "none",
     backgroundColor: "none",
-    percentage: true,
+    percentage: false,
     barHeight: 30,
     onComplete: loadedImagesComplete,
     completeAnimation: "grow"
