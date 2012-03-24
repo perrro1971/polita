@@ -205,8 +205,16 @@ ul.imglist li .bg{
 ul.imglist li a#open_project{
 	display: block;
 	width: 220px;
+	height: 175px;
 	margin: 10px 10px 0 10px;
 	text-decoration: none;
+}
+
+ul.imglist li a#open_project img{
+	height: 175px;
+	width: 220px;
+	clear: both;
+	display: block;
 }
 
 ul.imglist li .actions{
@@ -221,6 +229,10 @@ ul.imglist li .actions a{
 
 .imglist img {
     opacity: 0;
+}
+
+.actions img{
+	opacity: 1;
 }
 
 .bg{
