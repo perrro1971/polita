@@ -81,6 +81,9 @@ function imageUpload(e){
 
 function c_carousel(){
   $("h1").html($(".tclient").html());
+  
+  $.preloadCssImages();
+  
   $('#w_cont').carouFredSel({
     prev: '#prev1',
     next: '#next1'
@@ -96,14 +99,9 @@ function c_carousel(){
   	}
   );
 }
-
-function onImgError(){
-	console.log("error")
-}
  
 // http://net.tutsplus.com/tutorials/javascript-ajax/how-to-transition-an-image-from-bw-to-color-with-canvas/
 function grayscale(src) {
-	console.log(src)
     var supportsCanvas = !!document.createElement('canvas').getContext;
     if (supportsCanvas) {
         var canvas = document.createElement('canvas'),
