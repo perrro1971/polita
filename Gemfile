@@ -12,7 +12,8 @@ gem 'haml-rails'
 
 
 ## Additional functionality
-gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'#, :branch => 'rails_3_1_compatibility'
+gem 'paperclip'
+gem 'aws-s3'
 gem 'cancan'
 gem 'devise'
 
