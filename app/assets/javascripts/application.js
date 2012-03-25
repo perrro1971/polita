@@ -126,6 +126,7 @@ function loadedImagesComplete(){
 }
  
 // http://net.tutsplus.com/tutorials/javascript-ajax/how-to-transition-an-image-from-bw-to-color-with-canvas/
+/*
 function grayscale(src) {
     var supportsCanvas = !!document.createElement('canvas').getContext;
     if (supportsCanvas) {
@@ -154,3 +155,4 @@ function grayscale(src) {
         return src;
     }
 }
+*/
