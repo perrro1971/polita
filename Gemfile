@@ -16,7 +16,6 @@ gem 'paperclip'
 gem 'aws-s3'
 gem 'cancan'
 gem 'devise'
-gem 'xml-simple'
 
 # Gems used only for assets and not required
 # in production environments by default.
