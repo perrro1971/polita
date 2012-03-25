@@ -1,7 +1,7 @@
 class Project < ActiveRecord::Base
   validates :title, :presence => true
   
-  has_attached_file :photo, :styles => {:thumb => "100x100", :small => "220x175"},
+  has_attached_file :photo,
     :storage => :s3,
     :bucket => ENV['S3_BUCKET_NAME'],
     :s3_credentials => {
