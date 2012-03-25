@@ -10,7 +10,7 @@ $(->
       (data)->
         $('html, body').animate({scrollTop:100}, 400)
         $("#work").html("").css("opacity", 0).append(data).slideDown(400).animate({opacity: 1}, 400)
-        showCarrousel()
+        preloadImages()
     )
   )
   

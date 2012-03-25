@@ -9,13 +9,17 @@
 //= require_tree .
 
 $(window).load(function() {
+	/*
     $('.imglist img').not('.actions img').each(function() {
         $(this).wrap('&lt;div style="display:inline-block;opacity:0;width:' + this.width + 'px;height:' + this.height + 'px;"&gt;').clone().addClass('gotcolors').css('opacity', '0').css('position', 'absolute').insertBefore(this);
         this.src = grayscale(this.src);
     }).animate({opacity: 1}, 500);
+	*/
 });
+
  
 $(document).ready(function() {
+	/*
     $("#imglist1 a").hover(
         function() {
             $(this).find('.gotcolors').stop().animate({opacity: 1}, 200);
@@ -26,6 +30,7 @@ $(document).ready(function() {
 			$(this).parent().find('.bg').stop().animate({opacity: 0}, 500);
         }
     );
+	*/
 
 	$('.file input[type=file]').bind('change focus click', imageUpload );
 	
@@ -82,6 +87,7 @@ function imageUpload(e){
 function preloadImages(){
   $("h1").html($(".tclient").html());
   $('#w_cont').css("opacity", "0");
+  /*
   $("#w_cont").queryLoader2({
   	barColor: "none",
     backgroundColor: "none",
@@ -91,7 +97,8 @@ function preloadImages(){
     completeAnimation: "grow"
   });
   
-  
+  */
+ showCarrousel();
 }
 
 function showCarrousel(){
