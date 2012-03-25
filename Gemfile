@@ -13,6 +13,7 @@ gem 'haml-rails'
 
 ## Additional functionality
 gem 'paperclip'
+gem 'aws-s3'
 gem 'cancan'
 gem 'devise'
 
