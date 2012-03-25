@@ -208,13 +208,19 @@ ul.imglist li a#open_project{
 	height: 175px;
 	margin: 10px 10px 0 10px;
 	text-decoration: none;
+	position: absolute;
 }
 
 ul.imglist li a#open_project img{
-	height: 175px;
+	
+}
+
+ul.imglist li a#open_project .img{
 	width: 220px;
+	height: 175px;
 	clear: both;
 	display: block;
+	opacity: 0;
 }
 
 ul.imglist li .actions{
@@ -225,10 +231,6 @@ ul.imglist li .actions{
 
 ul.imglist li .actions a{
 	margin-left: 4px;
-}
-
-.imglist img {
-    opacity: 0;
 }
 
 .actions img{
@@ -487,7 +489,6 @@ div.actions a{
 	display: list-item;
 }
 
-img.gotcolors{
-	width: 220px;
-	height: 175px;
+img.imgcolors{
+	
 }

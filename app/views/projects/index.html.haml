@@ -6,9 +6,11 @@
   %ul#imglist1.imglist.group
     - @projects.each do |project|
       %li
+        .bg
         %a{:href=>"javascript:", :id=>"open_project", :class => project.id}
-          .bg
-          = image_tag(project.photo.url(:small))
+          
+          .img
+            = image_tag project.photo.url(:small), {:class => 'imgcolors'}
           .desc
             %span.title
               = project.title

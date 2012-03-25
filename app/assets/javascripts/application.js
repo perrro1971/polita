@@ -9,28 +9,29 @@
 //= require_tree .
 
 $(window).load(function() {
-	/*
-    $('.imglist img').not('.actions img').each(function() {
-        $(this).wrap('&lt;div style="display:inline-block;opacity:0;width:' + this.width + 'px;height:' + this.height + 'px;"&gt;').clone().addClass('gotcolors').css('opacity', '0').css('position', 'absolute').insertBefore(this);
-        this.src = grayscale(this.src);
-    }).animate({opacity: 1}, 500);
-	*/
+	$('.imglist img').not('.actions img').each(function() {
+		if($(this).prop('complete')){
+			var can = "<canvas style='position:absolute; ' height='"+this.height+"' width='"+this.width+"' ></canvas>";
+			$(can).insertBefore(this);
+        	grayscale(this);
+		}
+	});
 });
 
  
 $(document).ready(function() {
-	/*
     $("#imglist1 a").hover(
         function() {
-            $(this).find('.gotcolors').stop().animate({opacity: 1}, 200);
+			$(this).find('canvas').stop().animate({opacity: 0}, 200);
+			$(this).find('.imgcolors').stop().animate({opacity: 1}, 200);
 			$(this).parent().find('.bg').stop().animate({opacity: 1}, 200);
         },
         function() {
-            $(this).find('.gotcolors').stop().animate({opacity: 0}, 500);
-			$(this).parent().find('.bg').stop().animate({opacity: 0}, 500);
+			$(this).find('canvas').stop().animate({opacity: 1}, 200);
+            $(this).find('.imgcolors').stop().animate({opacity: 0}, 200);
+			$(this).parent().find('.bg').stop().animate({opacity: 0}, 200);
         }
     );
-	*/
 
 	$('.file input[type=file]').bind('change focus click', imageUpload );
 	
@@ -87,6 +88,9 @@ function imageUpload(e){
 function preloadImages(){
   $("h1").html($(".tclient").html());
   $('#w_cont').css("opacity", "0");
+  
+  
+  
   /*
   $("#w_cont").queryLoader2({
   	barColor: "none",
@@ -96,7 +100,6 @@ function preloadImages(){
     onComplete: loadedImagesComplete,
     completeAnimation: "grow"
   });
-  
   */
  showCarrousel();
 }
@@ -107,9 +110,7 @@ function showCarrousel(){
 	  next: '#next1'
 	});
 	$('#w_cont').animate({opacity: '1'},{duration: 300});
-
 	
-
    $("a#close").click(
   	function(){
   		$('html, body').animate({scrollTop:0}, 'slow');
@@ -124,35 +125,45 @@ function showCarrousel(){
 function loadedImagesComplete(){
 	showCarrousel();
 }
- 
-// http://net.tutsplus.com/tutorials/javascript-ajax/how-to-transition-an-image-from-bw-to-color-with-canvas/
-/*
-function grayscale(src) {
-    var supportsCanvas = !!document.createElement('canvas').getContext;
-    if (supportsCanvas) {
-        var canvas = document.createElement('canvas'),
-        context = canvas.getContext('2d'),
-        imageData, px, length, i = 0, gray,
-        img = new Image();
- 
-        img.src = src;
-        canvas.width = img.width;
-        canvas.height = img.height;
-        context.drawImage(img, 0, 0);
- 
-        imageData = context.getImageData(0, 0, canvas.width, canvas.height);
-        px = imageData.data;
-        length = px.length;
- 
-        for (; i < length; i += 4) {
-            gray = px[i] * .3 + px[i + 1] * .59 + px[i + 2] * .11;
-            px[i] = px[i + 1] = px[i + 2] = gray;
-        }
- 
-        context.putImageData(imageData, 0, 0);
-        return canvas.toDataURL();
-    } else {
-        return src;
-    }
+
+function grayscale(img) {
+	var supportsCanvas = !!document.createElement('canvas').getContext;
+	if (supportsCanvas) {
+		//http://www.maxnov.com/getimagedata/
+		$.getImageData({
+			url: img.src,
+			success: function(image){
+				// Set up the canvas
+				var can = $(img).parent().find('canvas')[0];
+				var ctx = can.getContext('2d');
+				// Set the canvas width and heigh to the same as the image
+			    $(can).attr('width', image.width);
+			    $(can).attr('height', image.height);
+			    // Draw the image on to the canvas
+    			ctx.drawImage(image, 0, 0, image.width, image.height);
+    			// Get the image data
+			    var image_data = ctx.getImageData(0, 0,  image.width, image.height);
+			    var image_data_array = image_data.data;
+			    // Invert every pixel
+			    for (var i = 0, j = image_data_array.length; i < j; i+=4) {
+			      gray = image_data_array[i] * .3 + image_data_array[i + 1] * .59 + image_data_array[i + 2] * .11;
+			      image_data_array[i] = gray;
+			      image_data_array[i+1] = gray;
+			      image_data_array[i+2] = gray;
+			    }
+			    // Write the image data to the canvas
+			    ctx.putImageData(image_data, 0, 0);
+			    $(img).parent().animate({opacity: '1'},{duration: 300});
+			    
+			},error: function(xhr, text_status){
+			    // Handle your error here
+			}
+		})
+		
+	} 
+	
+	
+	// http://net.tutsplus.com/tutorials/javascript-ajax/how-to-transition-an-image-from-bw-to-color-with-canvas/
+	// fails on load images from another domain
+	
 }
-*/

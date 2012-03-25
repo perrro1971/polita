@@ -1,0 +1,19 @@
+base: &base
+  amazon: {
+    s3_bucket: polita_development,
+    access_key_id: AKIAJQ352YLWCADQSITQ,
+    secret_access_key: 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
+  }
+
+development:
+  <<: *base
+  
+test:
+  <<: *base 
+
+production:
+  amazon: {
+    s3_bucket: ENV['S3_BUCKET_NAME'],
+    access_key_id: ENV['AWS_ACCESS_KEY_ID'],
+    secret_access_key: ENV['AWS_SECRET_ACCESS_KEY']
+  }
