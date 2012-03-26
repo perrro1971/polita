@@ -88,10 +88,8 @@ function imageUpload(e){
 function preloadImages(){
   $("h1").html($(".tclient").html());
   $('#w_cont').css("opacity", "0");
-  
-  
-  
-  /*
+
+/*
   $("#w_cont").queryLoader2({
   	barColor: "none",
     backgroundColor: "none",
@@ -101,25 +99,32 @@ function preloadImages(){
     completeAnimation: "grow"
   });
   */
- showCarrousel();
+ $('#w_cont img').each(function() {
+	}).one('load', function() { 
+		loadedImagesComplete();
+		});
 }
 
+
+
+
 function showCarrousel(){
+	$('#w_cont').animate({opacity: '1'},{duration: 500});
 	$('#w_cont').carouFredSel({
 	  prev: '#prev1',
 	  next: '#next1'
 	});
-	$('#w_cont').animate({opacity: '1'},{duration: 300});
 	
-   $("a#close").click(
-  	function(){
-  		$('html, body').animate({scrollTop:0}, 'slow');
-  		$("#work").slideUp(300, function () {
-      		$("#work").html("");
-      		$("h1").html("Projects...");
-    	});
-  	}
-  );
+	
+    $("a#close").click(
+	  	function(){
+	  		$('html, body').animate({scrollTop:0}, 'slow');
+	  		$("#work").slideUp(300, function () {
+	      		$("#work").html("");
+	      		$("h1").html("Projects...");
+	    	});
+	  	}
+  	);
 }
 
 function loadedImagesComplete(){

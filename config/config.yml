@@ -1,8 +1,8 @@
 base: &base
   amazon: {
-    s3_bucket: polita_development,
-    access_key_id: AKIAJQ352YLWCADQSITQ,
-    secret_access_key: Vf2ViT8XfaAH1wsKRRqO0T0bSy8yuO1XlMNlwt1w
+    s3_bucket: fake,
+    access_key_id: fake,
+    secret_access_key: fake
   }
 
 development:
