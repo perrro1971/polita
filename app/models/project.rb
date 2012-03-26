@@ -3,11 +3,11 @@ class Project < ActiveRecord::Base
   
   has_attached_file :photo, :styles => {:thumb => "100x100", :small => "220x175"},
     :storage => :s3,
-    :bucket => CONFIG[:amazon][:s3_bucket],
+    :bucket => ENV['S3_BUCKET_NAME'],
     :path => ":attachment/:id/:style/:basename.:extension",
     :s3_credentials => {
-      :access_key_id => CONFIG[:amazon][:access_key_id],
-      :secret_access_key => CONFIG[:amazon][:secret_access_key]
+      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     }
   
   has_many :assets, :dependent => :delete_all
